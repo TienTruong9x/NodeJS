@@ -1,0 +1,13 @@
+h1 Trang Hien Thi User
+
+form(action="/user/search",method="GET")
+    input(type="text",name="q",value=query)
+    br 
+    button Search
+
+ul 
+each user in users
+    li= user.id+ ' => ' +user.name 
+
+a(href="/user/create")
+  h1 add +
